@@ -1,0 +1,44 @@
+/* Header container */
+.header {
+  @apply fixed top-0 left-0 right-0 bg-[#FF6803] shadow-md transition-all z-50;
+  transition: top 0.5s ease-in-out; /* Smooth transition */
+}
+
+/* Header visibility */
+.header.show {
+  @apply top-0;
+}
+
+.header.hide {
+  @apply -top-24; /* Adjust as needed */
+}
+
+/* Navigation styles */
+nav {
+  @apply flex items-center justify-between p-4;
+}
+
+/* Logo styles */
+.logo img {
+  @apply h-10; /* Adjust the height as needed */
+}
+
+/* Menu styles */
+ul {
+  @apply flex space-x-8;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu item styles */
+.menu-item {
+  @apply text-white no-underline text-lg font-medium py-2;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Menu item hover styles */
+.menu-item:hover,
+.menu-item.active {
+  @apply border-b-2 border-white;
+}

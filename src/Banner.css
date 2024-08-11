@@ -1,0 +1,36 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Efek Parallax */
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 90%,
+    0 100%
+  ); /* Area miring di bawah banner */
+  overflow: hidden; /* Memastikan konten tetap dalam batas */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling untuk konten banner */
+.banner-content {
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Bayangan teks untuk keterbacaan lebih baik */
+  text-align: center;
+}
+
+/* Styling untuk judul */
+.banner-content h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+/* Styling untuk subtitle */
+.banner-content p {
+  font-size: 18px;
+}

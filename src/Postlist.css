@@ -1,0 +1,107 @@
+/* Container for the list of posts */
+.list-post-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Controls container */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Left side of controls */
+.controls-left {
+  flex: 1;
+}
+
+/* Information about the range of items being shown */
+.showing-info {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Right side of controls */
+.controls-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Styles for select elements */
+.control-select {
+  border: 2px solid #ddd; /* Border with 2px thickness */
+  border-radius: 999px; /* Fully rounded for pill shape */
+  padding: 8px 16px; /* Padding for better appearance */
+  font-size: 16px;
+  outline: none; /* Remove default outline */
+  transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.control-select:focus {
+  border-color: #ef6c00; /* Change border color on focus */
+}
+
+/* Grid container for posts */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 20px;
+}
+
+/* Individual post card */
+.post-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.post-card:hover {
+  transform: scale(1.03);
+}
+
+/* Styles for post image */
+.post-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Styles for post title */
+.post-title {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Pagination container */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Pagination button */
+.pagination-button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Active and hover state for pagination button */
+.pagination-button.active,
+.pagination-button:hover {
+  background-color: #ef6c00;
+  color: white;
+  border-color: #ef6c00;
+}
